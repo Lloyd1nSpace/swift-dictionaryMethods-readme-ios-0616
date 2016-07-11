@@ -90,7 +90,7 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
 }
 
 movies.removeValueForKey("The Fast and the Furious")
-
+// Important to know when to assign to nil and when to use removeValueFOrKey very similar to updateValue(_:forKey:)
 
 
 // COUNTING ITEMS
@@ -114,7 +114,7 @@ print(planetCount)
 
 let planetCount2 = planetsAndTheirMoons.count
 print(planetCount2)
-
+// Love the .count always
 
 if planetsAndTheirMoons.isEmpty {
     print("planetsAndTheirMoons is empty")
@@ -145,6 +145,7 @@ for planet in planetsAndTheirMoons.keys {
 // RETRIEVING VALUES
 
 let allTheMoons = Array(planetsAndTheirMoons.values)
+// This Array(dictionary.values) is very interesting to me hope to get more practice with it
 
 for numberOfMoons in planetsAndTheirMoons.values {
     print(numberOfMoons)
